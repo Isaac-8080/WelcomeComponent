@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <WelcomeComponent />
+      <WelcomeComponent name='Codetrain Africa' />
     </>
   )
 
@@ -18,7 +18,7 @@ class WelcomeComponent extends Component {
   render() {
     return (
       <>
-        <h1>Codetrain is awesome, react works!!!!</h1>
+        <h1>{this.props.name} is awesome, react works!!!!</h1>
       </>
     )
   }
